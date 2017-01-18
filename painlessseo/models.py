@@ -32,7 +32,7 @@ class SeoMetadata(models.Model):
                     'name. Example: \'/foo/bar/\'.'))
 
     lang_code = models.CharField(
-        verbose_name=_('Language'), max_length=2,
+        verbose_name=_('Language'), max_length=5,
         choices=settings.SEO_LANGUAGES, default=settings.DEFAULT_LANG_CODE)
 
     title = models.CharField(

@@ -24,7 +24,7 @@ def get_seo(context, **kwargs):
     else:
         request = context['request']
     path = request.path
-    lang_code = get_language()[:2]
+    lang_code = get_language()[:5]
     site = Site.objects.get_current()
     try:
         metadata = model_to_dict(SeoMetadata.objects.get(path=path,
